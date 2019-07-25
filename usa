@@ -1,0 +1,6 @@
+//Crea una LinearLayout
+pubblicit = FindViewById<LinearLayout>(Resource.Id.linearLayout_pub1);
+            _bannerad1 = AdWrapper_banner.ConstructStandardBanner(this, AdSize.SmartBanner, Class_settaggi.Banner);
+            _bannerad1.CustomBuild();
+            var layout = FindViewById<LinearLayout>(Resource.Id.linearLayout_pub1);
+            pubblicit.AddView(_bannerad1);
