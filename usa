@@ -4,3 +4,17 @@ pubblicit = FindViewById<LinearLayout>(Resource.Id.linearLayout_pub1);
             _bannerad1.CustomBuild();
             var layout = FindViewById<LinearLayout>(Resource.Id.linearLayout_pub1);
             pubblicit.AddView(_bannerad1);
+            
+            tutto viene inizializzato poi devi gestire i seguenti eventi
+              protected override void OnPause()
+        {
+            if (_bannerad1 != null) _bannerad1.Pause();
+            base.OnPause();
+        }
+
+        protected override void OnResume()
+        {
+            if (_bannerad1 != null) _bannerad1.Resume();
+            base.OnResume();
+        }
+
